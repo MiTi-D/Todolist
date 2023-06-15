@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="input">
+            <input type="text" placeholder="addTodo">
+            <button class="addtodo">Add</button>
+        </div>    
+    <div class="co">
+        <div class="sec-1">
+            <h1>Waiting</h1>
+            <div class="main-todo todo-co" ondragover="dropOver(event)" ondrop="dropHandler(event)" ">
+
+            </div>
+        </div>
+        <div class="sec-2">
+            <h1>Doing</h1>
+            <div ondragover="dropOver(event)" ondrop="dropHandler(event)" class="todo-co">
+
+            </div>
+        </div>
+        <div class="sec-3">
+            <h1>Done</h1>
+            <div ondragover="dropOver(event)" ondrop="dropHandler(event)" class="todo-co">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
